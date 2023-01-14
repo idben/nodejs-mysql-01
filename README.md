@@ -81,26 +81,25 @@
 7. 但是之後會一直加指令進來 index.js，只要加了，就要 ctrl + c 把主機中斷，然後再重新下指令開啟，很～～～累。所以使用剛剛有裝的中介軟體 nodemon 來幫我們做事。也就是要讓 nodemon 幫我們執行 index.js
 	1. 進到 package.json
 	2. 在 scripts 裡加上這句
-```json
-  "server": "nodemon index.js"
-```
-	3. 因為 scripts 裡原本也只有一句 test，所以把它覆寫後，完整的 scripts 會像這樣
-```json
-  "scripts": {
+  ```json
     "server": "nodemon index.js"
-  },
+  ```
+	3. 因為 scripts 裡原本也只有一句 test，所以把它覆寫後，完整的 scripts 會像這樣
+  ```json
+    "scripts": {
+      "server": "nodemon index.js"
+    },
   ```
 8. 回到位於 server 資料夾下的命令提示字元或終端機，輸入以下的指令
-```bash
-  npm run server
-```
+  ```bash
+    npm run server
+  ```
   這時候就可以看到
-```
-  [nodemon] starting `node index.js`
-  Connect to server!
-```
-9. 試著改一下「Connect to server!」變成「Welcome to server!」，然後記得存檔
-  這時候就會看到命令提示字元或終端機中的字主動會更新成「Welcome to server!」了
+  ```
+    [nodemon] starting `node index.js`
+    Connect to server!
+  ```
+9. 試著改一下「Connect to server!」變成「Welcome to server!」，然後記得存檔。這時候就會看到命令提示字元或終端機中的字主動會更新成「Welcome to server!」了
 
 ## 連結與使用 mySQL
 1. 在開始使用前，設定一下主機能夠使用 JSON 格式
