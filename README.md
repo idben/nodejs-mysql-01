@@ -91,14 +91,14 @@
       },
     ```
 8. 回到位於 server 資料夾下的命令提示字元或終端機，輸入以下的指令
-  ```bash
-    npm run server
-  ```
-  這時候就可以看到
-  ```
-    [nodemon] starting `node index.js`
-    Connect to server!
-  ```
+    ```bash
+      npm run server
+    ```
+    這時候就可以看到
+    ```
+      [nodemon] starting `node index.js`
+      Connect to server!
+    ```
 9. 試著改一下「Connect to server!」變成「Welcome to server!」，然後記得存檔。這時候就會看到命令提示字元或終端機中的字主動會更新成「Welcome to server!」了
 
 ## 連結與使用 mySQL
