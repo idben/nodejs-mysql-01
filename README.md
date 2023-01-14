@@ -199,7 +199,7 @@
       });
     ```
 	9. 存檔，由 postman 測試看看。或是在網址輸入localhost:3001/users 測試
-    ![操作圖示](https://github.com/idben/nodejs-mysql-01/blob/main/readmeimgs/info2.png)
+    ![操作圖示2](https://github.com/idben/nodejs-mysql-01/blob/main/readmeimgs/info2.png)
 
 ## 完成
 
