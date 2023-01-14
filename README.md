@@ -177,18 +177,15 @@
         db.query(q});
       });
     ```
-	7. 執行時總是要告知做什麼事，做什麼事就是寫在一組 function。
-	有結果時，會帶錯誤或是回傳的資料進這個 function
+	7. 執行時總是要告知做什麼事，做什麼事就是寫在一組 function。有結果時，會帶錯誤或是回傳的資料進這個 function
     ```javascript
       app.get('/users', (req, res)=>{
         const q = "SELECT * FROM users";
         db.query(q, (err, data)=>{
         });
       });
-  ```
-	8. 如果有錯誤，就把錯誤用 JSON 格式回傳
-	有 return 程式就會停在這句。
-	沒有錯，就是有結果，就把結果變成 JSON 回傳
+    ```
+	8. 如果有錯誤，就把錯誤用 JSON 格式回傳。有 return 程式就會停在這句。沒有錯，就是有結果，就把結果變成 JSON 回傳
     ```javascript
       app.get('/users', (req, res)=>{
         const q = "SELECT * FROM users";
