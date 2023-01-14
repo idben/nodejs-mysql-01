@@ -27,6 +27,30 @@
   npm i nodemon
 ```
 5. 一般來說，在 index.js 中使用套件需要先引用與定義
-```javascript
-  const express = require('express');
-```
+  ```javascript
+    const express = require('express');
+  ```
+  如果想讓引用與定義與寫 reactJS 中的 ES6 語法一致，那需要在 package.json 中設定 type 為 module
+  ```json
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+  ```
+  這樣一來，就可以寫成
+  ```javascript
+    import express from "express";
+  ```
+6. 完成所需套件的安裝
+
+## 建立資料庫
+1. 開啟 xampp，開啟 phpMyAdmin
+2. 建立一個新資料庫叫 nodejsTest
+3. 將附上的 sql 檔匯入
+	1. 點選一下左側的 nodejsTest
+	2. 再由中間上方找到「匯入」選項
+	3. 選擇附件 nodejsTest.sql
+	4. 再按下方的「匯入」按鈕
+	5. 結果應該是在 nodejsTest 資料庫下產生一個 users 的資料表
+4. 完成後點一下左側的 nodejsTest 下的 users 資料表，檢查看看是否有兩筆資料
